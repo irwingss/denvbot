@@ -71,8 +71,8 @@
 }
 
 .bpw-header-container {
-	color: #fff;
-	font-weight: bolder;
+	color: #fff!important;
+	font-weight: bolder!important;
 }
 
 .bpw-header-subtitle {
@@ -103,7 +103,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url('https://raw.githubusercontent.com/irwingss/denvbot/main/minsa-fondo.jpg');
+    background-image: url('https://raw.githubusercontent.com/irwingss/denvbot/main/minsa-fondo.jpg')!important;
     background-size: cover;
     background-position: center;
 }
@@ -115,6 +115,6 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 105, 197, 0.5); /* Ajusta la transparencia modificando el último valor */
+    background-color: rgba(0, 105, 197, 0.5)!important; /* Ajusta la transparencia modificando el último valor */
     z-index: -1;
 }
