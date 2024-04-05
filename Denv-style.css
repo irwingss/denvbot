@@ -1,0 +1,120 @@
+.bp-widget-web {
+    -webkit-font-smoothing: antialiased;
+    background: none transparent;
+    border: none;
+    color-scheme: none;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    opacity: 1;
+    padding: 0;
+    position: fixed;
+    transition: none;
+    visibility: none;
+    z-index: 20
+}
+
+.bp-widget-widget {
+    bottom: 24px;
+    height: 76px !important;
+    left: auto;
+    right: 36px;
+    top: auto;
+    width: 76px !important
+}
+
+.bp-widget-hidden {
+    display: none
+}
+
+.bp-widget-convo {
+    bottom: 24px;
+    left: auto;
+    max-height: 500px !important;
+    min-height: 382px !important;
+    right: 36px;
+    top: auto;
+    width: 420px !important
+}
+
+.bp-widget-side {
+    bottom: 0;
+    height: 100% !important;
+    left: auto;
+    right: 0;
+    top: 0;
+    width: 480px
+}
+
+@media only screen and (max-device-width:768px) {
+    .bp-widget-side {
+        width: 100%
+    }
+}
+
+/*# sourceMappingURL=inject.css.map */
+
+.bpw-bot-avatar, .bpw-bot-avatar img, .bpw-bot-avatar svg {
+	background: #fff!important;
+	border: none;
+	border-radius: 100%;
+	height: 40px;
+	width: 40px;
+}
+
+.bpw-header-container {
+	background: #000000!important;
+	border: none;
+	color: #fff;
+}
+
+.bpw-header-container {
+	color: #fff;
+	font-weight: bolder;
+}
+
+.bpw-header-subtitle {
+	color: #9a9a9a;
+	font-size: .75rem;
+	font-weight: 500;
+	margin-top: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space: wrap!important;
+}
+
+
+/*body {
+    background-color: #0069c5;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}*/
+
+body {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://raw.githubusercontent.com/irwingss/denvbot/main/minsa-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 105, 197, 0.5); /* Ajusta la transparencia modificando el último valor */
+    z-index: -1;
+}
