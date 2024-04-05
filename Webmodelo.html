@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+
+        #bp-web-widget-container {
+          max-height: 100%;
+          height: 100%!important;
+          width: 600px;
+          margin-top: 10px!important; 
+          margin: auto;
+          flex-grow: 1;
+        }
+        #bp-web-widget-container div {
+          height: 100%;
+        }
+        .webchatIframe {
+          position: relative !important;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DENVBot</title>
+    <link rel="stylesheet" href="Denv-style.css">
+</head>
+<body>
+
+    <div class="flex-container">
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script>
+        window.botpressWebChat.init({
+            "composerPlaceholder": "Chatea con DENVBot",
+            "botConversationDescription": "El chatbot de la Dirección General de Intervenciones Estratégicas en Salud Pública (DGIESP-MINSA)",
+            "botId": "d5235314-1018-4e2e-a4ae-57df0a3c1c50",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+            "messagingUrl": "https://messaging.botpress.cloud",
+            "clientId": "d5235314-1018-4e2e-a4ae-57df0a3c1c50",
+            "webhookId": "9ca95ade-0bf3-4667-8edd-4ec7bcd4e92f",
+            "lazySocket": true,
+            "themeName": "prism",
+            "botName": "DENVBot",
+            "avatarUrl": "https://raw.githubusercontent.com/irwingss/denvbot/main/logo.png",
+            "emailAddress": "info.dpi.minsa@gmail.com",
+            "website": "https://www.minsa.gob.pe/rissalud/plataformapisalud/",
+            "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/ebe4d2cb-3567-4ecc-8f2c-8ec039b92635/v87207/style.css",
+            "frontendVersion": "v1",
+            "useSessionStorage": true,
+            "enableConversationDeletion": true,
+            "theme": "prism",
+            "themeColor": "#2563eb",
+            "hideWidget": true,
+            "disableAnimations": false,
+            "closeOnEscape": false,
+            "showConversationsButton": false,
+            "enableTranscriptDownload": false,
+            "className": "webchatIframe",
+            "containerWidth": "100%25",
+            "layoutWidth": "100%25",
+            "showCloseButton": false
+        });
+        
+        window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+        
+        </script>
+    </div>
+    
+</body>
+</html>
